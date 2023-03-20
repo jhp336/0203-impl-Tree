@@ -44,10 +44,9 @@ public class Main {
             System.out.print((j+1)+") " +node.value + "의 자식노드 : ");
             int left = sc.nextInt();
             int right = sc.nextInt();
-            //부모노드, 현재 리스트크기(자식을 저장할 인덱스로 사용), 왼쪽 오른쪽 자식 값을 인자로
-            tree2.addNodes(node, tree2.getCurrentSize(), left, right);
+
+            tree2.addNodes(j, left, right);
         }
-        tree2.deleteNode(2,true);
 
         System.out.println("PreOrder 순회 결과>>");
         tree2.preOrder();
